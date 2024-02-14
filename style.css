@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.body,
+html {
+  font-family: "League Spartan", sans-serif;
+  color: rgb(22, 21, 21);
+}
+.container {
+  max-width: 100%;
+}
+.header__background {
+  height: 939px;
+  background: rgb(248, 248, 248);
+}
+.header {
+  display: flex;
+  max-width: 1430px;
+  padding: 0px 230px 0px 133px;
+  margin-inline: auto;
+}
+.header__list {
+  margin: 100px 55px 0px 0px;
+}
+.header__name {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 186%;
+  margin-bottom: 53px;
+}
+.header__title {
+  font-size: 250px;
+  font-weight: 300;
+  margin-bottom: 43px;
+}
+.header__description {
+  max-width: 575px;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 155%;
+  margin-bottom: 61px;
+}
+.header__button1 {
+  display: flex;
+}
+.header__button {
+  display: flex;
+  width: 278px;
+  height: 82px;
+  background: rgb(22, 21, 21);
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+.header__price {
+  display: flex;
+  width: 143px;
+  height: 82px;
+  box-shadow: 0px 0px 28px 0px rgba(214, 214, 214, 0.25);
+  background: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+.main * {
+  text-align: center;
+  margin-inline: auto;
+}
+.main__name {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 171%;
+}
+.main__title {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 112.5%;
+  margin-bottom: 84px;
+}
+.main__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(248, 248, 248);
+  width: 417px;
+  height: 630px;
+  margin-bottom: 67px;
+}
+.main__desc-name {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.main__desc-name-line {
+  display: inline-block;
+  justify-content: center;
+  position: relative;
+}
+.main__desc-name-line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgb(112, 112, 112);
+  bottom: -15px;
+  width: 71.2%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__description {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 155%;
+  max-width: 532px;
+  margin-bottom: 85px;
+}
+.main__desc-footer {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 170%;
+  max-width: 518px;
+  margin-top: 65px;
+  margin-bottom: 142px;
+}
+.main__fatty {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 170%;
+  color: rgb(187, 139, 93);
+}
+.main__fatty-line {
+  display: inline-block;
+  justify-content: center;
+  position: relative;
+}
+.main__fatty-line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgb(187, 139, 93);
+  bottom: 14px;
+  width: 100%;
+  height: 1px;
+}
+@media screen and (max-width: 1271px) {
+  .header__image-adapt {
+    display: flex;
+    width: 300px;
+    margin-top: 40px;
+  }
+  .header__background {
+    height: 776px;
+  }
+  .header__list {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .header__image-adapt {
+    display: flex;
+    width: 300px;
+    margin-top: 40px;
+  }
+  .header {
+    padding: 0px 30px 0px 80px;
+  }
+  .header__title {
+    font-size: 200px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .header__image-adapt {
+    display: flex;
+    width: 250px;
+    margin-top: 30px;
+  }
+  .header {
+    padding: 0px 30px 0px 40px;
+  }
+  .header__title {
+    font-size: 200px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__background {
+    height: 1200px;
+  }
+  .header__list{
+    margin:0;
+    margin-top: 20px;
+  }
+  .header__image {
+    order: -1;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__image-adapt {
+    display: flex;
+    width: 210px;
+    margin-top: 20px;
+  }
+  .header {
+    padding: 0px 10px 0px 20px;
+  }
+  .header__background {
+    height: 1018px;
+  }
+  .header__title {
+    font-size: 150px;
+  }
+  .header__description {
+    font-size: 27px;
+  }
+  .header__button{
+    width: 215px;
+    height: 63px;
+    font-size: 27px;
+  }
+  .header__price{
+    width: 110px;
+    height: 63px;
+    font-size: 27px;
+  }
+}
+
